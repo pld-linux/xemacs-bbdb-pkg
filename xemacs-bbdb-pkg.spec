@@ -12,10 +12,12 @@ Name:    	xemacs-bbdb-pkg
 Version: 	1.09
 Release:	1
 
-Patch0:  	%{name}-perl.patch
+
+Patch0:  	%{name}-info.patch
+Patch1:  	%{name}-perl.patch
 
 ### Preamble
-Copyright:	GPL
+License:	GPL
 Group:    	Applications/Editors/Emacs
 Group(pl):	Aplikacje/Edytory/Emacs
 URL:      	http://www.xemacs.org
@@ -48,6 +50,10 @@ Prereq:  	/usr/sbin/fix-info-dir
 %prep
 %setup -q -c
 %patch0 -p1
+%patch1 -p1
+
+%build
+(cd man/bbdb; awk '/^\\input texinfo/ {print FILENAME}' * | xargs makeinfo)
 
 %install
 rm -rf $RPM_BUILD_ROOT
