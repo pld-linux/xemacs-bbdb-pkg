@@ -6,6 +6,7 @@ Version:	1.16
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
+Group(de):	Applikationen/Editors/Emacs
 Group(pl):	Aplikacje/Edytory/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
 Patch0:		%{name}-info.patch
@@ -47,8 +48,7 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
-gzip -9nf $RPM_BUILD_ROOT%{_infodir}/*.info* \
-	lisp/bbdb/README lisp/bbdb/INSTALL lisp/bbdb/ChangeLog 
+gzip -9nf lisp/bbdb/README lisp/bbdb/INSTALL lisp/bbdb/ChangeLog 
 
 %clean
 rm -fr $RPM_BUILD_ROOT
