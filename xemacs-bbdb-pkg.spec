@@ -3,7 +3,7 @@ Summary(pl):	The Big Brother Data Base
 Name:		xemacs-bbdb-pkg
 %define 	srcname	bbdb
 Version:	1.16
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Editors/Emacs
 Group(de):	Applikationen/Editors/Emacs
@@ -29,7 +29,11 @@ Requires:	xemacs-base-pkg
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-The Insidious Big Brother Database.
+The Insidious Big Brother Database - a contact management utility.
+
+%description -l pl
+The Insidious Big Brother Database - zarz±dzanie informacjami
+kontaktowymi.
 
 %prep
 %setup -q -c
