@@ -29,8 +29,7 @@ Requires:	xemacs-base-pkg
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-
-%description -l pl 
+The Insidious Big Brother Database.
 
 %prep
 %setup -q -c
