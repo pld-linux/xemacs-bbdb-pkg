@@ -1,0 +1,29 @@
+diff -Nur xemacs-bbdb-pkg-1.09/man/bbdb/bbdb.texinfo xemacs-bbdb-pkg-1.09.new/man/bbdb/bbdb.texinfo
+--- xemacs-bbdb-pkg-1.09/man/bbdb/bbdb.texinfo	Sat Nov 27 21:49:44 1999
++++ xemacs-bbdb-pkg-1.09.new/man/bbdb/bbdb.texinfo	Sun Mar 26 14:49:57 2000
+@@ -1,6 +1,6 @@
+ \input texinfo  @c -*-texinfo-*-
+ @c %**start of header
+-@setfilename bbdb.info
++@setfilename ../../info/bbdb.info
+ @settitle Insidious Big Brother Database User Manual
+ @c %**end of header
+ 
+@@ -50,6 +50,17 @@
+ @c
+ @c
+ @c
++
++@ifinfo
++@format
++@dircategory XEmacs Editor:
++@direntry
++* BBDB: (bbdb). 			Insidious Big Brother Database User Manual
++@end direntry
++@end format
++@end ifinfo
++
++
+ 
+ @ifinfo
+ This file documents the Insidious Big Brother Database
