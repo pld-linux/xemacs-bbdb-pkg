@@ -49,7 +49,7 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
-gzip -9nf lisp/bbdb/README lisp/bbdb/INSTALL lisp/bbdb/ChangeLog 
+gzip -9nf lisp/bbdb/README lisp/bbdb/INSTALL lisp/bbdb/ChangeLog
 
 %clean
 rm -fr $RPM_BUILD_ROOT
@@ -62,7 +62,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc lisp/bbdb/README.gz lisp/bbdb/INSTALL.gz lisp/bbdb/ChangeLog.gz 
+%doc lisp/bbdb/README.gz lisp/bbdb/INSTALL.gz lisp/bbdb/ChangeLog.gz
 %{_datadir}/xemacs-packages%{_sysconfdir}/*
 %{_infodir}/*
 %dir %{_datadir}/xemacs-packages/lisp/*
