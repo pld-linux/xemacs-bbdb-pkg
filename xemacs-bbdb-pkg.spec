@@ -41,7 +41,8 @@ kontaktowymi.
 %patch1 -p1
 
 %build
-(cd man/bbdb; awk '/^\\input texinfo/ {print FILENAME}' * | xargs makeinfo)
+cd man/bbdb
+awk '/^\\input texinfo/ {print FILENAME}' * | xargs makeinfo
 
 %install
 rm -rf $RPM_BUILD_ROOT
