@@ -2,7 +2,7 @@ Summary:	The Big Brother Data Base
 Summary(pl):	The Big Brother Data Base
 Name:		xemacs-bbdb-pkg
 %define 	srcname	bbdb
-Version:	1.20
+Version:	1.21
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
@@ -49,8 +49,6 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
-gzip -9nf lisp/bbdb/README lisp/bbdb/INSTALL lisp/bbdb/ChangeLog
-
 # remove .el file if corresponding .elc file exists
 find $RPM_BUILD_ROOT -type f -name "*.el" | while read i; do test ! -f ${i}c || rm -f $i; done
 
@@ -65,7 +63,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc lisp/bbdb/README.gz lisp/bbdb/INSTALL.gz lisp/bbdb/ChangeLog.gz
+%doc lisp/bbdb/{README,INSTALL,ChangeLog}
 %{_datadir}/xemacs-packages%{_sysconfdir}/*
 %{_infodir}/*
 %dir %{_datadir}/xemacs-packages/lisp/*
