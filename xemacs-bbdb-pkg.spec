@@ -1,5 +1,5 @@
 Summary:	The Big Brother Data Base
-Summary(pl):	The Big Brother Data Base
+Summary(pl.UTF-8):   The Big Brother Data Base
 Name:		xemacs-bbdb-pkg
 %define 	srcname	bbdb
 Version:	1.29
@@ -31,8 +31,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 The Insidious Big Brother Database - a contact management utility.
 
-%description -l pl
-The Insidious Big Brother Database - zarz±dzanie informacjami
+%description -l pl.UTF-8
+The Insidious Big Brother Database - zarzÄ…dzanie informacjami
 kontaktowymi.
 
 %prep
