@@ -1,5 +1,5 @@
 Summary:	The Big Brother Data Base
-Summary(pl.UTF-8):   The Big Brother Data Base
+Summary(pl.UTF-8):	The Big Brother Data Base
 Name:		xemacs-bbdb-pkg
 %define 	srcname	bbdb
 Version:	1.29
