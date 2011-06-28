@@ -2,12 +2,12 @@ Summary:	The Big Brother Data Base
 Summary(pl.UTF-8):	The Big Brother Data Base
 Name:		xemacs-bbdb-pkg
 %define 	srcname	bbdb
-Version:	1.29
+Version:	1.32
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
 Source0:	http://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-# Source0-md5:	c8314f305d41335ac91bf5a2ff10d635
+# Source0-md5:	43b247335800cfe4bd8bb207725abbbb
 Patch0:		%{name}-info.patch
 Patch1:		%{name}-perl.patch
 URL:		http://www.xemacs.org/
